@@ -27,7 +27,21 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-/*----- Main -----*/
+.navbar li {
+    padding: 0 10px;
+    font-size: 1.25rem;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+/*===== Main =====*/
 
 .main {
     height: 700px;
@@ -56,11 +70,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/*----1st Section-----*/
+.main h2, .main h4 {
+    padding: 15px 0;
+}
+
+/*===== Section One =====*/
 .section_one {
     color: white;
     background-color: black;
     text-align: center;
+    padding: 30px 0;
 }
 
 .section_one .container {
@@ -82,12 +101,16 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
 }
 
+.section_one h2, .section_one h4 {
+    padding: 10px 0;
+}
+
 .section_one img {
     height: 200px;
     width: 300px;
 }
 
-/*----2nd Section-----*/
+/*===== 2nd Section =====*/
 .section_two {
     color: white;
     background-color: black;
@@ -117,20 +140,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section_two .row {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    flex-flow: row wrap;
     gap: 40px;
 }
 
 .section_two .column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: black;
-    flex-direction: row;
-    flex: 1 1 0px;
+    /* flex: 1 1 0px; */
+    width: 300px;
+    height: 300px;
 }
 
-/*----- contact -----*/
+.section_two h2 {
+    margin-bottom: 15px;
+}
+.section_two h3, .section_two h4 {
+    padding: 20px 0;
+}
+
+/*===== Contact =====*/
 .contact {
     display: flex;
 }
